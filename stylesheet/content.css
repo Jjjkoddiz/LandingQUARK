@@ -202,7 +202,7 @@ h5 {
 .infocreatures {
   position: absolute;
   top: 3vh;
-  margin-left: 72.5vw;
+  right: 1vw;
   width: 25vw;
   min-height: 35vh;
   background: rgba(255, 255, 255, 0.15);
@@ -345,6 +345,7 @@ h5 {
 }
 
 .creature__title {
+  margin-left: 0.2vw;
   font-family: 'NeutralFaceRegular';
   font-size: 1.8em;
   font-weight: 300;
@@ -360,12 +361,13 @@ h5 {
   font-weight: 5;
   line-height: 1.5;
   margin-bottom: 0.5vw;
-  width: 88%;
+  width: 90%;
   letter-spacing: 0.03vw;
   text-transform: none;
 }
 
 .creature__size {
+  position: absolute;
   font-family: 'NeutralFaceRegular';
   font-weight: 100;
   font-size: 0.7em;
@@ -374,6 +376,7 @@ h5 {
   width: 25%;
   align-content: end;
   height: 3.2vw;
+  right: 0;
 }
 
 .third_screen {
@@ -388,6 +391,7 @@ h5 {
 }
 
 .movetext {
+  height: 8vw;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -397,6 +401,8 @@ h5 {
 }
 
 .movetext span {
+  margin-top: 2vw;
+  height: 8vw;
   font-family: 'NeutralFaceRegular';
   font-weight: 700;
   color: #fff;
@@ -458,8 +464,8 @@ h5 {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  line-height: 1; /*  Уменьшаем высоту строки */
-  margin-top: -5px; /*  Поднимаем кнопку вверх */
+  line-height: 1;
+  margin-top: -5px;
 }
 
 .close-button:hover,

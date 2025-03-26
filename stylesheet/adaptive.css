@@ -1,77 +1,54 @@
-@media (max-width: 1440px) {
-  h1 {
-    font-size: 2.5vw;
-  }
-  h2 {
-    font-size: 2.1vw;
-  }
-  h3 {
-    font-size: 1.2vw;
-  }
-  h4 {
-    font-size: 0.9vw;
-  }
-  h5 {
-    font-size: 1.1vw;
-  }
-  .buttons {
-    margin-top: 19vw;
-  }
-
-  .butone,
-  .buttwo {
-    width: 12vw;
-    height: 5vh;
-  }
-
+@media (max-width: 1920px) {
   .description {
-    margin-top: 44vw;
     width: 28vw;
     min-height: 17vh;
   }
 
-  .infocreatures {
-    top: 2.6vh;
-    width: 23vw;
-    margin-left: 74.5vw;
+  .creature__description {
+    margin-top: 0.5vw;
+    width: 75%;
+  }
+
+  .creature__size {
+    margin-top: 0.5vw;
+  }
+
+  .container {
+    max-width: 1280px;
+    gap: 7vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .description {
+    margin-top: 40vw;
+    width: 28vw;
+    min-height: 17vh;
+  }
+  .creature {
+    top: 2vw;
+    width: 32vw;
+  }
+  .creature__description {
+    margin-top: 1vw;
+    width: 70%;
+  }
+
+  .creature__size {
+    margin-top: 1vw;
+  }
+
+  .creature__image {
+    height: 68%;
+  }
+
+  .container {
+    max-width: 1100px;
+    gap: 5vw;
   }
 }
 
 @media (max-width: 1280px) {
-  h1 {
-    font-size: 2.2vw;
-  }
-  h2 {
-    font-size: 1.9vw;
-  }
-  h3 {
-    font-size: 1.3vw;
-  }
-  h4 {
-    font-size: 1.2vw;
-  }
-  h5 {
-    font-size: 1.2vw;
-  }
-
-  .buttons {
-    margin-top: 20vw;
-  }
-
-  .description {
-    margin-top: 54vw;
-    width: 28vw;
-    min-height: 16vh;
-  }
-
-  .infocreatures {
-    top: 2.9vh;
-    width: 24vw;
-    margin-left: 85.7vw;
-  }
-}
-
-@media (max-width: 1024px) {
   h1 {
     font-size: 2.4vw;
   }
@@ -82,13 +59,52 @@
     font-size: 1.5vw;
   }
   h4 {
-    font-size: 1.3vw;
-  }
-  h5 {
     font-size: 1.4vw;
   }
+  h5 {
+    font-size: 1.3vw;
+  }
+
   .buttons {
-    margin-top: 24vw;
+    margin-top: 20vw;
+  }
+
+  .description {
+    width: 32vw;
+    min-height: 16vh;
+  }
+
+  .infocreatures {
+    width: 26vw;
+  }
+
+  .creature {
+    top: 4vw;
+    width: 34vw;
+    height: 60vh;
+  }
+  .creature__description {
+    margin-top: 1vw;
+    width: 62%;
+  }
+
+  .creature__size {
+    margin-top: 1vw;
+  }
+
+  .creature__image {
+    height: 69%;
+  }
+
+  .container {
+    max-width: 950px;
+    gap: 5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .buttons {
+    margin-top: 26vw;
   }
 
   .butone,
@@ -99,15 +115,37 @@
   }
 
   .description {
-    margin-top: 62vw;
+    margin-top: 48vw;
     width: 40vw;
     min-height: 14.5vh;
   }
 
   .infocreatures {
-    top: 2.9vh;
+    top: 2.7vh;
     width: 25vw;
-    margin-left: 71.8vw;
+  }
+
+  .creature {
+    top: 2vw;
+    width: 38vw;
+    height: 54vh;
+  }
+  .creature__description {
+    margin-top: 1vw;
+    width: 65%;
+  }
+
+  .creature__size {
+    margin-top: 1vw;
+  }
+
+  .creature__image {
+    height: 72%;
+  }
+
+  .container {
+    max-width: 790px;
+    gap: 5vw;
   }
 }
 
@@ -135,7 +173,9 @@
 
   .buttons {
     margin-left: 2vw;
-    margin-top: 50vw;
+    margin-top: 46vw;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .butone,
@@ -146,21 +186,14 @@
 
   .description {
     margin-left: 2vw;
-    margin-top: 120vw;
+    margin-top: 76vw;
     min-height: 16vh;
     width: 60vw;
   }
 
   .description .closebutton {
-    width: 5vw;
-    height: 5vw;
-    margin-top: 120vw;
-  }
-
-  .infocreatures {
-    top: 2.6vh;
-    width: 50vw;
-    margin-left: 78vw;
+    width: 4vw;
+    height: 4vw;
   }
 
   .infocreatures .closebuttonsecond {
@@ -174,60 +207,186 @@
   .second_screen {
     margin-top: 5vw;
   }
+
+  .infocreatures {
+    top: 2.8vh;
+    right: 2.5vw;
+    width: 60vw;
+    min-height: 20vh;
+  }
+
+  .textheadergallery {
+    margin-top: 10vw;
+  }
+
+  .creature {
+    top: 15vw;
+    width: 45vw;
+    height: 50vh;
+  }
+  .creature__description {
+    margin-top: 1vw;
+    width: 70%;
+    font-size: 1.2vw;
+  }
+
+  .creature__size {
+    margin-top: 3vw;
+    width: 12vw;
+  }
+
+  .creature__image {
+    height: 68%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    gap: 1vw;
+  }
+
+  .contact-form {
+    width: 45vw; /* Уменьшаем ширину формы */
+    margin-top: 15vw; /* Уменьшаем верхний отступ */
+    padding: 2vw; /* Уменьшаем внутренний отступ */
+  }
+
+  .profile-picture {
+    width: 12vw;
+    height: 12vw;
+    margin-bottom: 2vw;
+    height: 14vw;
+  }
+
+  input {
+    font-size: 1.2vw;
+    padding: 0.9vw;
+    border-radius: 0.7vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .submit a {
+    font-size: 1.2vw;
+    padding: 0.9vw;
+    border-radius: 0.7vw;
+  }
+
+  .submarine-container {
+    width: 45vw;
+  }
+
+  #submarine {
+    max-width: 90%;
+  }
 }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 579px) {
   h1 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   h2 {
-    font-size: 4vw;
+    font-size: 6.5vw;
   }
   h3 {
-    font-size: 3.8vw;
+    font-size: 4vw;
   }
   h4 {
-    font-size: 3.3vw;
+    font-size: 2.6vw;
   }
   h5 {
-    font-size: 2.9vw;
+    font-size: 3.2vw;
   }
-
   .maininfo {
-    top: 2.5vw;
-    left: 2.5vw;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
   }
-
   .buttons {
-    top: 30vw;
+    margin-top: 30vw;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .butone,
   .buttwo {
-    width: 70vw;
-    height: 8vh;
+    width: 40vw;
+    height: 6vh;
     margin-bottom: 2vw;
-    margin-right: 0;
   }
-
   .description {
-    top: 50vw;
-    width: 80vw;
+    margin-top: 90vw;
+    margin-left: 2.5vw;
+    width: 80%;
   }
-
   .infocreatures {
-    bottom: 2.5vw;
+    margin-top: 115vw;
     left: 2.5vw;
-    width: 85vw;
-    top: auto;
+    width: 80%;
+    min-height: 20vh;
   }
 
-  .first_screen {
-    min-height: 150vh; /* увеличиваем еще больше */
+  .textheadergallery {
+    margin-top: 20vw;
   }
-  .second_screen {
-    margin-top: 10vw; /* увелич отступ */
+  .creature__title {
+    font-size: 1.1em;
+  }
+  .creature {
+    top: 30vw;
+    width: 55vw;
+    height: 45vh;
+  }
+  .creature__description {
+    margin-top: 1vw;
+    width: 70%;
+    font-size: 1.5vw;
+  }
+
+  .creature__size {
+    margin-top: 4vw;
+    width: 12vw;
+    font-size: 0.5em;
+  }
+
+  .creature__image {
+    height: 74%;
+  }
+  .container {
+    min-height: auto;
+  }
+
+  .contact-form {
+    width: 62vw;
+    height: auto;
+    margin-top: 16vw;
+    column-gap: normal;
+  }
+
+  .profile-picture {
+    width: 16vw;
+    height: 16vw;
+    margin-bottom: 4vw;
+  }
+
+  input {
+    font-size: 1.7vw;
+    padding: 1.4vw;
+    border-radius: 1.2vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .submit a {
+    font-size: 1.7vw;
+    padding: 1.4vw;
+    border-radius: 1.2vw;
+  }
+
+  .submarine-container {
+    width: 60vw;
+    margin-top: 0;
+  }
+
+  #submarine {
+    max-width: 100%;
   }
 }
