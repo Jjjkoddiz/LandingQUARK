@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Quark" />
+    <meta charset="UTF-8" />
+    <meta
+      property="og:description"
+      content="Сайт — демоверсия путешествия по подводному микромиру с турагентством Кварк"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.139.0/build/three.module.js",
+          "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "three/examples/jsm/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "three/examples/jsm/lights/RectAreaLightUniformsLib.js": "https://cdn.jsdelivr.net/npm/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="model.js" type="module"></script>
+    <script src="swiper_cards.js"></script>
+    <title>VR-tour Quark</title>
+  </head>
+  <body>
+    <section class="progressbar">
+      <div class="preloader">
+        <div id="preloadcircle"></div>
+        <h1 class="maintitle">Исследуй микромир вместе c нами!</h1>
+      </div>
+    </section>
+    <section class="first_screen">
+      <div class="maininfo">
+        <h3>КВАРК</h3>
+        <h5>Турагентство по микромиру</h5>
+        <h3 class="margin">VR-toor</h3>
+      </div>
+      <div class="buttons">
+        <div class="butone">
+          <h4><a href="#description">Описание VR-tour</a></h4>
+        </div>
+        <div class="buttwo">
+          <h4><a href="#infocreatures">Существа</a></h4>
+        </div>
+      </div>
+      <div id="description" class="description none">
+        <div class="closebutton"></div>
+        <h3 class="headtext">Vr-tour</h3>
+        <h4 class="textdescription">
+          Экранизация демоверсии путешествия,<br />
+          которое организовывает наша компания, <br />
+          в подводный микромир
+        </h4>
+      </div>
+      <div id="infocreatures" class="infocreatures none">
+        <div class="closebuttonsecond"></div>
+        <h3>Добро пожаловать <br />в мир невидимых героев!</h3>
+        <h4 class="textinfocreatures">
+          Даже самые крошечные создания играют огромную роль в нашей жизни! От
+          их работы зависит чистота воздуха, плодородие почвы и здоровье
+          океанов. <br />Эти невидимые герои – настоящие мастера выживания и
+          создатели удивительных явлений. Готовы к исследованию? Дальше <br />на
+          сайте мы познакомим вас с яркими представителями микромира!
+        </h4>
+      </div>
+      <div class="model" style="width: 100%; height: 100vh"></div>
+    </section>
+    <section class="second_screen">
+      <div class="textheadergallery"><h2>Галлерея существ</h2></div>
+      <div class="slideswrapper">
+        <div class="background-image">
+          <img id="background-image" src="" alt="Background" />
+        </div>
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="creature">
+                <p class="creature__title">Динофлагелляты</p>
+                <div class="creature__image">
+                  <img
+                    class="creature-image"
+                    src="./images/динофлагелляты.png"
+                    alt="Динофлагелляты"
+                  />
+                </div>
+                <div class="creature__content">
+                  <p class="creature__description">
+                    Биологические зажигалки океана. Способны создавать
+                    невероятное биолюминесцентное шоу
+                  </p>
+                  <span class="creature__size">10–450 мкм</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="creature">
+                <p class="creature__title">Тихоходка</p>
+                <div class="creature__image">
+                  <img
+                    class="creature-image"
+                    src="./images/тихоходка.png"
+                    alt="Тихоходка"
+                  />
+                </div>
+                <div class="creature__content">
+                  <p class="creature__description">
+                    Эталон спокойствия в мире <br />
+                    животных, хотя, возможно,<br />
+                    у них просто нет выхода
+                  </p>
+                  <span class="creature__size">0,1–1,5 мм</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="creature">
+                <p class="creature__title">Дафния</p>
+                <div class="creature__image">
+                  <img
+                    class="creature-image"
+                    src="./images/дафния.png"
+                    alt="Дафния"
+                  />
+                </div>
+                <div class="creature__content">
+                  <p class="creature__description">
+                    Водяная блоха, <br />но на самом деле <br />она микрорачок
+                  </p>
+                  <span class="creature__size">1–3 мм</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="creature">
+                <p class="creature__title">Нематод</p>
+                <div class="creature__image">
+                  <img
+                    class="creature-image"
+                    src="./images/нематод.png"
+                    alt="Нематод"
+                  />
+                </div>
+                <div class="creature__content">
+                  <p class="creature__description">
+                    Главный консультант по уклонению <br />от хищников в
+                    подводном мире, <br />мнгновенно исчезает из поля зрения
+                  </p>
+                  <span class="creature__size">1–2 мм</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="creature">
+                <p class="creature__title">Рак</p>
+                <div class="creature__image">
+                  <img
+                    class="creature-image"
+                    src="./images/рак.png"
+                    alt="Рак"
+                  />
+                </div>
+                <div class="creature__content">
+                  <p class="creature__description">
+                    Философ и созерцатель океанских глубин. Пытается постичь
+                    смысл бытия, но пока безуспешно
+                  </p>
+                  <span class="creature__size">2,5–3 см</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third_screen">
+      <div class="movetext">
+        <span id="movetext"
+          >Бронируй тур / Бронируй тур / Бронируй тур / Бронируй тур
+        </span>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="modalText">Пожалуйста, заполните все поля формы</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contact-form">
+          <div class="profile-picture">
+            <img src="./images/profile.svg" alt="Profile" />
+          </div>
+          <div class="wrapper">
+            <div class="row">
+              <input type="text" placeholder="User Name" />
+            </div>
+            <div class="row">
+              <input type="text" placeholder="User Email" />
+            </div>
+            <div class="row">
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="row submit">
+              <a href="#" id="createAccountBtn">Create Account</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="submarine-container">
+          <img
+            id="submarine"
+            src="./images/submarine.svg"
+            alt="Подводная лодка"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

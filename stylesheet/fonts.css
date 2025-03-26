@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NeutralFaceRegular';
+  src: url('../fonts/NeutralFaceRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+}
