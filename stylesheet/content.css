@@ -150,6 +150,7 @@ h5 {
   width: 14vw;
   height: 6vh;
   background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 1vw;
   display: flex;
@@ -177,6 +178,7 @@ h5 {
   width: 30vw;
   min-height: 20vh;
   background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 1vw;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -197,6 +199,7 @@ h5 {
 
 .description h4.textdescription {
   margin-top: 1vw;
+  opacity: 80%;
 }
 
 .infocreatures {
@@ -206,6 +209,7 @@ h5 {
   width: 25vw;
   min-height: 35vh;
   background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 1.5vw;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -226,6 +230,7 @@ h5 {
 
 .infocreatures h4 {
   margin-top: 1vw;
+  opacity: 80%;
 }
 
 .second_screen {
@@ -303,6 +308,7 @@ h5 {
   width: 30vw;
   height: 60vh; /*Высота карточки с существом */
   background: rgba(255, 255, 255, 0.15); /* Полупрозрачный фон карточки */
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px); /* Эффект размытия фона карточки */
   border-radius: 2vw; /* Скругления */
   overflow: hidden;
@@ -520,6 +526,7 @@ h5 {
   height: auto;
   padding: 2vw;
   background: rgba(50, 50, 50, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 1.6vw;
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
@@ -561,7 +568,7 @@ input {
   padding: 0.8vw;
   font-size: 1vw;
   color: #fff;
-  font-family: 'NeutralFaceRegular', sans-serif;
+  font-family: 'HelveticaNeueCyr-Roman';
   outline: none;
   box-sizing: border-box;
   margin-bottom: 1vw;
@@ -570,6 +577,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  letter-spacing: 0.1vw;
 }
 
 input::placeholder {

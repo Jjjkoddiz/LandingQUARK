@@ -4,6 +4,10 @@
     min-height: 17vh;
   }
 
+  .infocreatures h4 {
+    width: 20vw;
+  }
+
   .creature__description {
     margin-top: 0.5vw;
     width: 75%;
@@ -20,11 +24,21 @@
 }
 
 @media (max-width: 1440px) {
+  .maintitle {
+    width: 50%;
+  }
+  #preloadcircle {
+    margin-top: -20vw;
+  }
   .description {
     margin-top: 40vw;
     width: 28vw;
     min-height: 17vh;
   }
+  .infocreatures {
+    width: 30vw;
+  }
+
   .creature {
     top: 2vw;
     width: 32vw;
@@ -50,7 +64,7 @@
 
 @media (max-width: 1280px) {
   h1 {
-    font-size: 2.4vw;
+    font-size: 4vw;
   }
   h2 {
     font-size: 2vw;
@@ -122,7 +136,7 @@
 
   .infocreatures {
     top: 2.7vh;
-    width: 25vw;
+    width: 35vw;
   }
 
   .creature {
@@ -199,6 +213,10 @@
   .infocreatures .closebuttonsecond {
     width: 4vw;
     height: 4vw;
+  }
+
+  .infocreatures h4 {
+    width: 50vw;
   }
 
   .first_screen {
@@ -314,15 +332,19 @@
     margin-bottom: 2vw;
   }
   .description {
-    margin-top: 90vw;
+    margin-top: 70vw;
     margin-left: 2.5vw;
     width: 80%;
   }
   .infocreatures {
-    margin-top: 115vw;
+    margin-top: 100vw;
     left: 2.5vw;
     width: 80%;
     min-height: 20vh;
+  }
+
+  .infocreatures h4 {
+    width: 67vw;
   }
 
   .textheadergallery {
