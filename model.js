@@ -52,7 +52,7 @@ function initThree() {
   }
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#000'); // Здесь настраивается фон, щас черный
+  scene.background = new THREE.Color('#000');
   scene.position.set(0, -10, 0);
   // Параметры камеры
   const camera = new THREE.PerspectiveCamera(
@@ -97,10 +97,10 @@ function initThree() {
 
   // Управление моделью
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = false; // Отключаем затухание для экономии ресурсов
+  controls.enableDamping = false;
   controls.maxDistance = 100;
   controls.maxPolarAngle = Math.PI / 2.3;
-  controls.hasChanged = false; // Флаг для рендеринга по необходимости
+  controls.hasChanged = false;
 
   function animate() {
     requestAnimationFrame(animate);
@@ -123,6 +123,8 @@ function initThree() {
     renderer.setSize(window.innerWidth, window.innerHeight);
   }
 }
+
+// Интерфейс первого экрана
 
 function initNavigation() {
   const butone = document.querySelector('.butone');

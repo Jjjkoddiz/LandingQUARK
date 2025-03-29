@@ -1,20 +1,32 @@
 @media (max-width: 1920px) {
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  h3 {
+    font-size: 1.2vw;
+  }
+  h4 {
+    font-size: 0.91vw;
+  }
+
+  .maintitle {
+    width: 40%;
+  }
+
   .description {
-    width: 28vw;
+    width: 24vw;
     min-height: 17vh;
   }
 
   .infocreatures h4 {
-    width: 20vw;
+    width: 24vw;
   }
 
-  .creature__description {
-    margin-top: 0.5vw;
-    width: 75%;
-  }
-
-  .creature__size {
-    margin-top: 0.5vw;
+  .infocreatures h4.textinfocreatures {
+    width: 21.6vw;
   }
 
   .container {
@@ -24,38 +36,35 @@
 }
 
 @media (max-width: 1440px) {
+  h2 {
+    font-size: 2.4vw;
+  }
   .maintitle {
-    width: 50%;
+    width: 40%;
   }
   #preloadcircle {
-    margin-top: -20vw;
+    margin-top: -30vw;
   }
   .description {
     margin-top: 40vw;
-    width: 28vw;
+    width: 26vw;
     min-height: 17vh;
   }
+  .description .closebutton {
+    top: 1.3vw;
+  }
+
   .infocreatures {
-    width: 30vw;
+    width: 26vw;
+    min-height: 26vh;
+  }
+  .infocreatures .closebuttonsecond {
+    top: 1.3vw;
   }
 
   .creature {
-    top: 2vw;
     width: 32vw;
   }
-  .creature__description {
-    margin-top: 1vw;
-    width: 70%;
-  }
-
-  .creature__size {
-    margin-top: 1vw;
-  }
-
-  .creature__image {
-    height: 68%;
-  }
-
   .container {
     max-width: 1100px;
     gap: 5vw;
@@ -70,13 +79,10 @@
     font-size: 2vw;
   }
   h3 {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
   h4 {
-    font-size: 1.4vw;
-  }
-  h5 {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
   }
 
   .buttons {
@@ -84,30 +90,24 @@
   }
 
   .description {
-    width: 32vw;
+    width: 30vw;
     min-height: 16vh;
   }
 
   .infocreatures {
+    width: 30vw;
+  }
+
+  .infocreatures h4.textinfocreatures {
     width: 26vw;
   }
 
   .creature {
-    top: 4vw;
-    width: 34vw;
-    height: 60vh;
-  }
-  .creature__description {
-    margin-top: 1vw;
-    width: 62%;
+    width: 32vw;
   }
 
   .creature__size {
-    margin-top: 1vw;
-  }
-
-  .creature__image {
-    height: 69%;
+    height: 3.6vw;
   }
 
   .container {
@@ -117,44 +117,70 @@
 }
 
 @media (max-width: 1024px) {
+  .maintitle {
+    width: 50%;
+  }
+  #preloadcircle {
+    margin-top: -20vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  h3 {
+    font-size: 1.5vw;
+  }
+  h4 {
+    font-size: 1.1vw;
+  }
+
   .buttons {
     margin-top: 26vw;
   }
 
   .butone,
   .buttwo {
-    width: 15vw;
-    height: 4.5vh;
+    width: 16vw;
+    height: 5vh;
     margin-bottom: 1vw;
   }
 
   .description {
     margin-top: 48vw;
-    width: 40vw;
+    width: 30vw;
     min-height: 14.5vh;
   }
 
   .infocreatures {
     top: 2.7vh;
-    width: 35vw;
+    width: 30vw;
+  }
+  .infocreatures h4.textinfocreatures {
+    width: 26vw;
   }
 
   .creature {
-    top: 2vw;
-    width: 38vw;
-    height: 54vh;
+    width: 36vw;
   }
+  .creature__title {
+    font-size: 1.8em;
+    letter-spacing: 0.2vw;
+  }
+
   .creature__description {
-    margin-top: 1vw;
-    width: 65%;
+    font-size: 1vw;
+    width: 75%;
+    letter-spacing: 0.03vw;
   }
 
   .creature__size {
-    margin-top: 1vw;
-  }
-
-  .creature__image {
-    height: 72%;
+    font-size: 0.7em;
+    letter-spacing: 0.1vw;
+    width: 35%;
+    height: 4.2vw;
   }
 
   .container {
@@ -164,20 +190,27 @@
 }
 
 @media (max-width: 768px) {
+  .maintitle {
+    margin-top: -30vw;
+    width: 60%;
+  }
+  #preloadcircle {
+    margin-top: 25vw;
+    width: 5%;
+    height: 5%;
+    border: 2px solid white;
+  }
   h1 {
     font-size: 5vw;
   }
   h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   h3 {
     font-size: 2.8vw;
   }
   h4 {
-    font-size: 2.3vw;
-  }
-  h5 {
-    font-size: 1.9vw;
+    font-size: 2.1vw;
   }
   .maininfo {
     margin-top: 2vw;
@@ -202,21 +235,41 @@
     margin-left: 2vw;
     margin-top: 76vw;
     min-height: 16vh;
-    width: 60vw;
+    width: 48vw;
+  }
+  .creature__description {
+    font-size: 1.45vw;
+    width: 78%;
+    letter-spacing: 0.03vw;
+  }
+
+  .creature__size {
+    font-size: 0.7em;
+    letter-spacing: 0.1vw;
+    width: 35%;
+    height: 6.1vw;
   }
 
   .description .closebutton {
-    width: 4vw;
-    height: 4vw;
+    width: 3.7vw;
+    height: 3.7vw;
+    top: 1.6vw;
   }
 
   .infocreatures .closebuttonsecond {
-    width: 4vw;
-    height: 4vw;
+    width: 3.7vw;
+    height: 3.7vw;
   }
 
-  .infocreatures h4 {
-    width: 50vw;
+  .infocreatures {
+    top: 2.8vh;
+    right: 2.5vw;
+    width: 45vw;
+    min-height: 20vh;
+  }
+
+  .infocreatures h4.textinfocreatures {
+    width: 38vw;
   }
 
   .first_screen {
@@ -226,35 +279,13 @@
     margin-top: 5vw;
   }
 
-  .infocreatures {
-    top: 2.8vh;
-    right: 2.5vw;
-    width: 60vw;
-    min-height: 20vh;
-  }
-
   .textheadergallery {
     margin-top: 10vw;
   }
 
   .creature {
-    top: 15vw;
-    width: 45vw;
-    height: 50vh;
-  }
-  .creature__description {
-    margin-top: 1vw;
-    width: 70%;
-    font-size: 1.2vw;
-  }
-
-  .creature__size {
-    margin-top: 3vw;
-    width: 12vw;
-  }
-
-  .creature__image {
-    height: 68%;
+    top: 10vw;
+    width: 50vw;
   }
 
   .container {
@@ -265,9 +296,9 @@
   }
 
   .contact-form {
-    width: 45vw; /* Уменьшаем ширину формы */
-    margin-top: 15vw; /* Уменьшаем верхний отступ */
-    padding: 2vw; /* Уменьшаем внутренний отступ */
+    width: 50vw;
+    margin-top: 15vw;
+    padding: 2vw;
   }
 
   .profile-picture {
@@ -278,42 +309,81 @@
   }
 
   input {
-    font-size: 1.2vw;
-    padding: 0.9vw;
-    border-radius: 0.7vw;
+    font-size: 1.4vw;
+    padding: 0.7vw;
+    border-radius: 0.9vw;
     margin-bottom: 1.5vw;
   }
 
   .submit a {
-    font-size: 1.2vw;
-    padding: 0.9vw;
-    border-radius: 0.7vw;
+    font-size: 1.4vw;
+    padding: 0.7vw;
+    border-radius: 0.9vw;
   }
 
   .submarine-container {
-    width: 45vw;
+    width: 50vw;
   }
 
   #submarine {
     max-width: 90%;
   }
+
+  .logo {
+    width: 18vw;
+    height: 12vw;
+  }
+
+  .footer-left h4:first-child {
+    font-size: 2vw;
+    letter-spacing: 0.06vw;
+  }
+
+  .footer-left h4:last-child {
+    font-size: 2vw;
+    letter-spacing: 0.06vw;
+  }
 }
 
 @media screen and (max-width: 579px) {
   h1 {
-    font-size: 7vw;
+    font-size: 5vw;
   }
   h2 {
-    font-size: 6.5vw;
+    font-size: 3.2vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 3vw;
+  }
+  .maintitle {
+    top: 0;
+    width: 60%;
+  }
+  #preloadcircle {
+    margin-top: 50vw;
+    width: 7%;
+    height: 4.5%;
+    border: 2px solid white;
+  }
+
+  .preloader {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 7.5vw;
   }
   h3 {
     font-size: 4vw;
   }
   h4 {
     font-size: 2.6vw;
-  }
-  h5 {
-    font-size: 3.2vw;
   }
   .maininfo {
     margin-top: 2.5vw;
@@ -327,21 +397,21 @@
 
   .butone,
   .buttwo {
-    width: 40vw;
-    height: 6vh;
+    width: 35vw;
+    height: 5vh;
     margin-bottom: 2vw;
   }
   .description {
     margin-top: 70vw;
     margin-left: 2.5vw;
-    width: 80%;
+    width: 68%;
     min-height: 14vh;
   }
   .infocreatures {
-    margin-top: 90vw;
+    margin-top: 92vw;
     left: 2.5vw;
-    width: 80%;
-    min-height: 30vh;
+    width: 68%;
+    min-height: 32vh;
   }
   .infocreatures h4.textinfocreatures {
     width: 60vw;
@@ -350,27 +420,50 @@
     width: 67vw;
   }
 
+  .description .closebutton {
+    top: 1.5vw;
+    right: 1vw;
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .infocreatures .closebuttonsecond {
+    top: 1.5vw;
+    right: 1vw;
+    width: 6vw;
+    height: 6vw;
+  }
+  .first_screen {
+    min-height: 100vh;
+  }
+  .second_screen {
+    margin-top: 5vw;
+    min-height: 100vh;
+  }
+
   .textheadergallery {
     margin-top: 20vw;
   }
   .creature__title {
-    font-size: 1.1em;
+    margin-top: 1vw;
+    font-size: 1.4em;
   }
+
   .creature {
-    top: 30vw;
-    width: 55vw;
-    height: 45vh;
+    top: 40vw;
+    width: 75vw;
   }
+
   .creature__description {
     margin-top: 1vw;
-    width: 70%;
-    font-size: 1.5vw;
+    width: 72%;
+    font-size: 1.9vw;
   }
 
   .creature__size {
-    margin-top: 4vw;
-    width: 12vw;
-    font-size: 0.5em;
+    margin-top: 3.5vw;
+    width: 16vw;
+    font-size: 0.6em;
   }
 
   .creature__image {
@@ -379,7 +472,10 @@
   .container {
     min-height: auto;
   }
-
+  .third_screen {
+    margin-top: 5vw;
+    min-height: 100vh;
+  }
   .contact-form {
     width: 62vw;
     height: auto;
@@ -413,5 +509,19 @@
 
   #submarine {
     max-width: 100%;
+  }
+  .logo {
+    width: 24vw;
+    height: 12vw;
+  }
+
+  .footer-left h4:first-child {
+    font-size: 3vw;
+    letter-spacing: 0.06vw;
+  }
+
+  .footer-left h4:last-child {
+    font-size: 3vw;
+    letter-spacing: 0.06vw;
   }
 }

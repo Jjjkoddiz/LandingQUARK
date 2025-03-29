@@ -1,7 +1,7 @@
 .maintitle {
   font-family: 'NeutralFaceRegular';
   margin-top: -70vw;
-  width: 40%;
+  width: 50%;
   line-height: 1.2;
   margin-left: 2%;
   text-align: center;
@@ -10,6 +10,7 @@
 .none {
   display: none !important;
 }
+
 .preloader {
   position: fixed;
   overflow-x: hidden;
@@ -30,12 +31,10 @@
   display: flex;
   margin-top: -30vw;
   margin-left: 2%;
-  width: 4%;
-  height: 4%;
+  width: 5%;
+  height: 5%;
   border: 3px solid white;
   border-radius: 50%;
-  will-change: transform; /* Улучшает производительность */
-  backface-visibility: hidden; /* Улучшает производительность */
 }
 
 * {
@@ -53,6 +52,8 @@ body {
   flex-direction: column;
   overflow-y: scroll;
 }
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -101,14 +102,6 @@ h4 {
   line-height: 1.4;
 }
 
-h5 {
-  font-family: 'HelveticaNeueCyr-Roman';
-  font-size: 1.2em;
-  color: #fff;
-  font-weight: 400;
-  line-height: 1.4;
-}
-
 .first_screen {
   width: 100%;
   height: 100vh;
@@ -144,6 +137,7 @@ h5 {
   flex-direction: column;
   gap: 1vw;
 }
+
 .butone,
 .buttwo {
   width: 14vw;
@@ -155,8 +149,8 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Менее сильная тень */
-  margin-bottom: 1vw; /* Отступ между кнопками */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
   transition: background-color 0.3s ease;
 }
 
@@ -187,9 +181,10 @@ h5 {
 
 .description .closebutton {
   position: absolute;
+  top: 1.5vw;
   right: 1vw;
-  width: 2.1vw;
-  height: 2.1vw;
+  width: 2vw;
+  height: 2vw;
   background: url('https://img.icons8.com/windows/96/FFFFFF/macos-close.png')
     center/cover no-repeat;
   cursor: pointer;
@@ -222,10 +217,11 @@ h5 {
 
 .infocreatures .closebuttonsecond {
   position: absolute;
-  margin-bottom: 0.5vw;
+  top: 1.5vw;
   right: 1vw;
-  width: 2.1vw;
-  height: 2.1vw;
+  width: 2vw;
+  height: 2vw;
+  margin-bottom: 0.5vw;
   background: url('https://img.icons8.com/windows/96/FFFFFF/macos-close.png')
     center/cover no-repeat;
   cursor: pointer;
@@ -272,7 +268,7 @@ h5 {
 
 .slideswrapper {
   width: 100%;
-  height: 100vh; /* Полная высота для центрирования */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,18 +305,19 @@ h5 {
 
 .creature {
   width: 30vw;
-  height: 60vh; /*Высота карточки с существом */
-  background: rgba(255, 255, 255, 0.15); /* Полупрозрачный фон карточки */
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px); /* Эффект размытия фона карточки */
-  border-radius: 2vw; /* Скругления */
-  overflow: hidden;
   position: relative;
+  aspect-ratio: 1 / 1; /* Сохраняем квадратные пропорции */
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 2vw;
+  overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.8vw;
+  box-sizing: border-box;
   color: #fff;
   margin: 0 auto;
   margin-top: 10%;
@@ -366,11 +363,11 @@ h5 {
 .creature__description {
   font-family: 'NeutralFaceRegular';
   text-align: left;
-  font-size: 0.75vw;
+  font-size: 0.85vw;
   font-weight: 5;
   line-height: 1.5;
   margin-bottom: 0.5vw;
-  width: 90%;
+  width: 80%;
   letter-spacing: 0.03vw;
   text-transform: none;
 }
@@ -384,7 +381,7 @@ h5 {
   text-align: right;
   width: 25%;
   align-content: end;
-  height: 3.2vw;
+  height: 3.5vw;
   right: 0;
 }
 
@@ -420,8 +417,8 @@ h5 {
   display: inline-block;
   letter-spacing: 0.5vw;
   padding-left: 100%;
-  position: relative; /* Важно для смещения текста */
-  left: 0; /* Начальное положение */
+  position: relative;
+  left: 0;
 }
 
 /* Стили для модального окна */
@@ -439,7 +436,6 @@ h5 {
   display: flex;
 }
 
-/* Стили для контента модального окна */
 .modal-content {
   background-color: rgba(50, 50, 50, 0.9);
   padding: 20px;
@@ -487,18 +483,6 @@ h5 {
 /* Добавляем отступ между строками текста */
 #modalText {
   line-height: 1.5;
-}
-
-/* Анимация появления */
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 /* Стили для кнопки закрытия */
@@ -614,6 +598,7 @@ input::placeholder {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0.1vw;
 }
 
 .submit a:hover {
@@ -639,11 +624,12 @@ input::placeholder {
 }
 
 footer {
-  background-color: #000; /* Черный фон */
-  padding: 2vw;
+  height: 8vh;
+  background-color: #000;
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  padding: 2vw;
 }
 
 .footer-content {
@@ -655,7 +641,12 @@ footer {
 }
 
 .footer-left {
-  gap: 2vw;
+  gap: 2.5vw;
+}
+
+.logo {
+  width: 16vw;
+  height: 12vw;
 }
 
 .footer-left,
@@ -665,16 +656,16 @@ footer {
   justify-content: center;
 }
 
-.footer-left h4:first-child,
-.footer-right h4:first-child {
+.footer-left h4:first-child {
   font-size: 1.5vw;
   line-height: 1.2;
   margin: 0;
+  letter-spacing: 0.06vw;
 }
 
-.footer-left h4:last-child,
-.footer-right h4:last-child {
+.footer-left h4:last-child {
   font-size: 1.5vw;
   line-height: 1.2;
   margin: 0;
+  letter-spacing: 0.06vw;
 }
