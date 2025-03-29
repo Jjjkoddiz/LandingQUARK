@@ -402,16 +402,16 @@
     margin-bottom: 2vw;
   }
   .description {
-    margin-top: 70vw;
+    margin-top: 72vw;
     margin-left: 2.5vw;
-    width: 68%;
-    min-height: 14vh;
+    width: 70%;
+    min-height: 10vh;
   }
   .infocreatures {
-    margin-top: 92vw;
+    margin-top: 96vw;
     left: 2.5vw;
-    width: 68%;
-    min-height: 32vh;
+    width: 70%;
+    min-height: 25vh;
   }
   .infocreatures h4.textinfocreatures {
     width: 60vw;
