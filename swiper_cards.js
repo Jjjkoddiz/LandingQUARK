@@ -1,3 +1,4 @@
+// Второй экран
 document.addEventListener('DOMContentLoaded', () => {
   initSlider();
   initCardEffects();
@@ -72,6 +73,7 @@ function initCardEffects() {
   requestAnimationFrame(updateCards);
 }
 
+// Третий экран бегущий текст
 document.addEventListener('DOMContentLoaded', function () {
   const movetextSpan = document.getElementById('movetext');
 
